@@ -1,5 +1,6 @@
 import random
-word_list=['aaple','banana','cherry','potato','new','bike','car','shirt','angle','python'];
+import hangman_stages
+word_list=['aaple','banana','cherry','potato','new','bike','car','shirt','angle','python','drink','colddrink','fashion'];
 
 
 lives=6;
@@ -7,7 +8,7 @@ lives=6;
 
 chosen_word=random.choice(word_list);
 
-#print(chosen_word);
+print(chosen_word);
 
 print("Guess the word! ")
 display=[];
@@ -44,3 +45,4 @@ while not gm_over:
 		gm_over=True;
 		print('yehhh! You Win');
 
+	print(hangman_stages.stages[lives])
